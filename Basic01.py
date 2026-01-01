@@ -50,7 +50,7 @@ print(f'Port7: {p7}')
 print(f'Port8: {p8}')
 print(f'Checksum: {cks}')
 
-##int from bytes??
+##Creates an int from split up byte array
 port4 = int.from_bytes(p4, "big")
 print(port4)
 print(f'Port4: {port4}')
