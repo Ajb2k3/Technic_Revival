@@ -61,7 +61,7 @@ print(f'Port4: {port4}')
 
 while True:
     ser.write(keepalive)
-    input_bytes = bytearray(ser.read(19))
+    input_bytes = bytearray(ser.read(19)) #For some reason this line must be included in the main loop.
     st = (input_bytes[0:2])
     stop = int.from_bytes(st, "big")
     print(stop)
